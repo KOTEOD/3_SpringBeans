@@ -9,8 +9,9 @@ public class AnimalsCage {
 
     @Autowired()
     @Qualifier("dog")
-
     private Animal animal;
+    private Timer timer;
+
 
     public void whatAnimalSay() {
         System.out.println("Say:");
@@ -19,4 +20,14 @@ public class AnimalsCage {
         System.out.println(new Timer().getTime());
         System.out.println("________________________");
     }
+
+    @Autowired
+    public void setTimer(Timer timer){
+        this.timer=timer;
+    }
+    public Timer getTimer(){
+        return this.timer;
+    }
+
+
 }
