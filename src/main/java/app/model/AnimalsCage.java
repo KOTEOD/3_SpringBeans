@@ -28,6 +28,7 @@ public class AnimalsCage {
     public void setTimer(Timer timer){
         this.timer=timer;
     }
+
     public Timer getTimer(){
         return this.timer;
     }
